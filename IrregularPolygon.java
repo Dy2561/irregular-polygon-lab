@@ -38,6 +38,14 @@ public class IrregularPolygon {
 
     
     public void draw() {
-        
+        if (myPolygon.size() < 2) return; 
+
+        DrawingTool pen = new DrawingTool(new SketchPad(500, 500));
+        Point2D.Double firstPoint = myPolygon.get(0);
+        pen.up();
+        pen.move(firstPoint.x, firstPoint.y);
+        pen.down();
+
+         
     }
 }
