@@ -33,4 +33,11 @@ public class IrregularPolygon {
             sum1 += p1.x * p2.y;
             sum2 += p1.y * p2.x;
         }
+        return Math.abs((sum1 - sum2) / 2);
+    }
+
+    
+    public void draw() {
         
+    }
+}
