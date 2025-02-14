@@ -46,6 +46,9 @@ public class IrregularPolygon {
         pen.move(firstPoint.x, firstPoint.y);
         pen.down();
 
-         
+        for (Point2D.Double point : myPolygon) {
+            pen.move(point.x, point.y);
+        }
+        pen.move(firstPoint.x, firstPoint.y); 
     }
 }
